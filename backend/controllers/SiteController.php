@@ -1,6 +1,7 @@
 <?php
 namespace backend\controllers;
 
+use backend\assets\AdminLtePluginAsset;
 use Yii;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
@@ -12,6 +13,7 @@ use common\models\LoginForm;
  */
 class SiteController extends Controller
 {
+    // public $layout = AdminLtePluginAsset/main;
     /**
      * {@inheritdoc}
      */

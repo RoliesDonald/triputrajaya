@@ -8,7 +8,7 @@ $params = array_merge(
 
 return [
     'id' => 'app-backend',
-    'name' => 'triputra Jaya Internationals',
+    'name' => 'TJI',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
@@ -39,14 +39,25 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        
-        // 'urlManager' => [
-        //     'enablePrettyUrl' => true,
-        //     'showScriptName' => false,
-        //     'rules' => [
-        //     ],
-        // ],
-        
+
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'rules' => [
+            ],
+        ],
+        'assetManager' => [
+            'bundles' => [
+                'backend/assets/TriputraLteAsset' => [],
+            ],
+        ],
+    //     'view' => [
+    //         'theme' => [
+    //             'pathMap' => [
+    //                '@app/views' => '@vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app'
+    //             ],
+    //         ],
+    //    ],
     ],
     'params' => $params,
 ];
